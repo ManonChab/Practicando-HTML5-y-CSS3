@@ -1,0 +1,178 @@
+body {
+    display: grid;
+    row-gap: 5px;
+    color:rgb(223,46,47) ;
+    background-color: #E5E5E5;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: barlow, sans-serif;
+}
+
+header {
+    background-color: black;
+    display: grid;
+}
+
+.navbar{
+    background-color:rgb(41,127,137) ;
+    margin: 10px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    text-align: center;
+}
+
+#logo{
+    background-color: rgb(247,209,103);
+    margin: 15px;
+    align-content: center;
+    padding: 5px;
+}
+
+#navbar{
+    background-color: rgb(247,209,103);
+    margin: 15px;
+    align-content: center;
+    }
+
+#registro {
+    background-color: rgb(247,209,103);
+    margin: 15px;
+    align-content: center;
+    padding: 5px;
+}
+
+#banner {
+    background-color:rgb(247,209,103) ;
+    border: 15px solid rgb(223,46,47);
+    margin: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    align-content: center;
+    text-align: center;
+}
+
+main {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box1 {
+    background-color:rgb(41,127,137);
+    margin: 10px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 48%;
+}
+
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articulo{
+    background-color:  rgb(247,209,103);
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.one{
+    flex: 0 0 50%;
+}
+
+.two{
+    flex: 0 0 50%;
+}
+
+.comentario{
+    background-color:  rgb(247,209,103);
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.options{
+    background-color: rgb(223,46,47);
+    margin: 10px;
+    flex: 0 0 48%;
+}
+
+.option{
+    background-color:  rgb(247,209,103);
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+}
+
+#contacto{
+    background-color:  rgb(247,209,103);
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (768px <= width <= 992px) {
+    main {
+        flex-direction: column;
+    }
+
+    .options {
+        flex: 0 0;
+    }
+}
+
+@media (width <= 576px) {
+    body {
+        color: rgb(41,127,137) ;;
+    }
+    .navbar {
+
+        background-color: rgb(223,46,47);
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    #logo {
+        padding: 15px;
+    }
+
+    #banner {
+        padding: 15px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+    .box1 {
+        background-color: rgb(223,46,47);
+    }
+
+    .articulos {
+        flex-direction: column;
+    }
+
+    .articulo {
+        padding: 15px;
+    }
+
+    .comentario {
+        padding: 15px;
+    }
+
+    .options {
+        flex: 0 0;
+    }
+
+    .option {
+        padding: 15px;
+    }
+
+
+}
